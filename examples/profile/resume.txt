@@ -1,0 +1,12 @@
+Alex Rivera
+Data Engineer (example profile, not a real person)
+
+Experience
+- Senior Data Engineer, Northwind Analytics (2021-2024): built batch and streaming pipelines with Python, Apache Spark and Kafka on AWS; cut nightly load time from 6 h to 90 min.
+- Data Engineer, Contoso Retail (2018-2021): SQL and dbt models on Snowflake, Airflow orchestration, data quality tests.
+
+Skills
+Python (7 years), SQL (8 years), Spark (4 years), Kafka (3 years), Airflow (5 years), dbt (3 years), AWS (S3, Glue, EMR), Docker.
+
+Education
+BSc Computer Science, Example University (2018).

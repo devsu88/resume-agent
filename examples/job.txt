@@ -1,0 +1,2 @@
+We are looking for a Data Engineer to build and run batch pipelines.
+Requirements: Python, SQL, Apache Spark, Airflow, experience with a cloud provider (AWS or GCP). Nice to have: dbt, Kubernetes.

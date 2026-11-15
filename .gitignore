@@ -1,0 +1,8 @@
+.env
+/profile/
+leads.jsonl
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.gradio/
