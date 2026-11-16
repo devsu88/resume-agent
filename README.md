@@ -53,7 +53,7 @@ Your profile folder holds `resume.pdf` (or `.txt`/`.md`), an optional `summary.t
 
 ## Key decisions
 
-- **It says it is an AI.** The first prototype played the person ("you are Justine…"). This one represents them in the third
+- **It says it is an AI.** The first prototype played the person ("you are <name>…"). This one represents them in the third
   person, says it is an AI assistant if asked, and may only use the resume: it never invents employers, dates or numbers.
 - **The model can call only two named functions.** The first prototype ran `globals().get(tool_name)`, so a model (or a
   prompt-injected visitor) could have called any function in the program. Tools are now an explicit registry, arguments are
@@ -80,6 +80,7 @@ including a PDF, the parallel pipeline with and without the judge, and the Markd
   model call and can also be wrong.
 - Skills are extracted from the text with prompts, so unusual layouts or very long resumes can degrade results.
 - The matching prompts are long and English-oriented; they were carried over from the prototype and tuned only lightly.
+- A job match takes about a minute with `gpt-4o-mini` (it makes six or seven sequential-and-parallel model calls with long prompts; measured at 61 s with the judge). The chat answers in a few seconds.
 - There is no hosted demo yet and no HTTP API. The web app runs locally with `resume-agent serve`.
 - Your leads file (`leads.jsonl`) contains visitors' emails: protect it and respect privacy rules where you deploy.
 
