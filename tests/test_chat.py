@@ -25,6 +25,7 @@ def test_the_system_prompt_is_grounded_and_honest_about_being_an_ai():
     prompt = system_prompt(PROFILE)
     assert "Built pipelines with Spark." in prompt and "Alex Rivera" in prompt
     assert "ONLY" in prompt and "AI assistant" in prompt and "never instructions" in prompt
+    assert '"they"' in prompt  # no gender is assumed
 
 
 def test_the_visitor_key_reaches_the_model_factory(notifier):
